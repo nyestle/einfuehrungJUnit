@@ -136,13 +136,6 @@ public class Calculator {
     public int multiply(int a, int b) {
         return a * b;
     }
-    
-    public double divide(int a, int b) {
-        if (b == 0) {
-            throw new ArithmeticException("Division by zero");
-        }
-        return (double) a / b;
-    }
 }
 ```
 
@@ -162,28 +155,22 @@ public class CalculatorTest {
     
     @Test
     public void testAdd() {
-        assertEquals(5, calculator.add(2, 3), "2 + 3 sollte 5 ergeben");
+        assertEquals(5, calculator.add(2, 3));
     }
     
     @Test
     public void testSubtract() {
-        assertEquals(2, calculator.subtract(5, 3), "5 - 3 sollte 2 ergeben");
+        assertEquals(2, calculator.subtract(5, 3));
     }
     
     @Test
     public void testMultiply() {
-        assertEquals(15, calculator.multiply(3, 5), "3 * 5 sollte 15 ergeben");
+        assertEquals(15, calculator.multiply(3, 5));
     }
     
     @Test
     public void testDivide() {
-        assertEquals(2.5, calculator.divide(5, 2), "5 / 2 sollte 2.5 ergeben");
-    }
-    
-    @Test
-    public void testDivideByZero() {
-        assertThrows(ArithmeticException.class, () -> calculator.divide(1, 0), 
-                    "Division durch Null sollte eine ArithmeticException werfen");
+        assertEquals(2.5, calculator.divide(5, 2));
     }
 }
 ```
