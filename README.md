@@ -5,7 +5,7 @@ Diese Anleitung führt dich durch die Schritte zur Einrichtung eines Maven-Proje
 ## Voraussetzungen
 
 - [Java JDK](https://adoptium.net/) (Version 8 oder höher)
-- [Maven](https://maven.apache.org/download.cgi)
+- [Maven](https://maven.apache.org/download.cgi) (bin.zip)
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - VS Code Extensions:
   - [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
